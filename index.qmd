@@ -1,0 +1,47 @@
+---
+title: Utah Climate Action
+format: 
+    html:
+        code-fold: true
+toc: True
+# bibliography: reference.bib
+---
+
+# Introduction
+
+Text here
+
+```{r}
+library(reticulate)
+
+use_condaenv("base", required = TRUE)
+```
+
+## Subtitle
+
+More text
+
+### Visualization 1
+```{python}
+#| echo: true
+#| eval: true 
+#| file: code/heat-geo.py
+#| fig-cap: place description here
+```
+
+### Visualization 2
+```{python}
+#| echo: true
+#| eval: true 
+#| file: code/treecanopy-geo.py
+#| fig-cap: place description here
+```
+
+### Visualization 3
+```{python}
+#| echo: true
+#| eval: true 
+#| file: code/trend.py
+#| fig-cap: place description here
+```
+
