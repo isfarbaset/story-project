@@ -4,5 +4,17 @@
   },
   "about.qmd": {
     "about.html": "694aa4b9"
+  },
+  "treecanopy.qmd": {
+    "treecanopy.html": "2e4b0a32"
+  },
+  "trend.qmd": {
+    "trend.html": "e789bc33"
+  },
+  "pages/treecanopy/treecanopy.qmd": {
+    "treecanopy.html": "8bf473a7"
+  },
+  "pages/trend/trend.qmd": {
+    "trend.html": "dc1e8511"
   }
 }

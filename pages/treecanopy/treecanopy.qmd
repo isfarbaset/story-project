@@ -1,5 +1,5 @@
 ---
-title: Southeastern Utah's National Parks
+title: Treecanopy Analysis
 format: 
     html:
         code-fold: true
@@ -21,15 +21,13 @@ use_condaenv("base", required = TRUE)
 
 More text
 
-<p style="font-size: 42px; font-weight: bold;">It's getting hot in here 🥵</p>
-
 ### Visualization 1
 ```{python}
 #| echo: true
 #| eval: true 
-#| file: code/heat-geo.py
+#| file: ../../code/treecanopy-geo.py
 #| fig-cap: place description here
 ```
 
 
-<p style="font-size: 24px;">Hi my name is Isfar</p>
+Hi my name is Isfar

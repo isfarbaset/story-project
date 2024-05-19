@@ -5,8 +5,8 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 # Load the cleaned datasets
-historic_data = pd.read_csv('./data/clean-data/historic_data_cleaned.csv')
-nearterm_data = pd.read_csv('./data/clean-data/nearterm_data_cleaned.csv')
+historic_data = pd.read_csv('../../data/clean-data/historic_data_cleaned.csv')
+nearterm_data = pd.read_csv('../../data/clean-data/nearterm_data_cleaned.csv')
 
 # Combine datasets for some visualizations
 combined_data = pd.concat([historic_data, nearterm_data])

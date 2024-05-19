@@ -2,18 +2,29 @@ project:
   type: website
 
 website:
-  title: "story-project"
+  title: Southeastern Utah's National Parks
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
+    background: primary
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/isfarbaset/story-project
+  sidebar:
+    style: "floating"
+    search: false
+    contents:
+      - section: "Home"
+        contents:
+          - index.qmd
+      - section: "Looking into treecanopy 🌳"
+        contents:
+          - pages/treecanopy/treecanopy.qmd
+      - section: "What's trending 📊"
+        contents:
+          - pages/trend/trend.qmd
+    
 format:
   html:
     theme: cosmo
-    css: styles.css
     toc: true
-
-
-
