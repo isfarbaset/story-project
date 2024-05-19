@@ -14,15 +14,19 @@ website:
     style: "floating"
     search: false
     contents:
-      - section: "Home"
+      - section: "1️⃣"
         contents:
           - index.qmd
-      - section: "Looking into treecanopy 🌳"
+      - section: "2️⃣"
         contents:
           - pages/treecanopy/treecanopy.qmd
-      - section: "What's trending 📊"
+      - section: "3️⃣"
         contents:
           - pages/trend/trend.qmd
+    # contents:
+    #   - index.qmd
+    #   - pages/treecanopy/treecanopy.qmd
+    #   - pages/trend/trend.qmd
     
 format:
   html:
