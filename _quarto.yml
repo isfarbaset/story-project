@@ -29,6 +29,9 @@ website:
       - section: "Chapter 4️⃣"
         contents:
           - ppt.qmd
+      - section: "Chapter 5️⃣"
+        contents:
+          - conclusion.qmd
     # contents:
     #   - index.qmd
     #   - pages/treecanopy/treecanopy.qmd

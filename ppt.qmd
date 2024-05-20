@@ -1,5 +1,5 @@
 ---
-title: Summer Rain
+title: Rain
 format: 
     html:
         code-fold: true
@@ -7,9 +7,7 @@ toc: True
 # bibliography: reference.bib
 ---
 
-# Introduction
-
-Text here
+Since we discovered that evaporation rates have been decreasing over the past years, it would be interesting to see if rainfall has also decreased. In the water cycle, evaporation ultimately leads to rainfall, so it makes sense that less evaporation over the years could result in less rainfall.
 
 ```{r}
 library(reticulate)
@@ -17,16 +15,21 @@ library(reticulate)
 use_condaenv("base", required = TRUE)
 ```
 
-## Subtitle
-
-More text
-
-<p style="font-size: 42px; font-weight: bold;">🌧️</p>
-
-### Visualization 1
+# Summer Rain Stats
 ```{python}
 #| echo: true
 #| eval: true 
-#| file: code/ppt.py
-#| fig-cap: place description here
+#| file: code/ppt-geo.py
+#| fig-cap: This animated map displays the geospatial distribution of summer precipitation in Southeastern Utah from 1980 to 2024. It visualizes changes in precipitation levels over time with the help of the color gradient, providing insights into evolving rainfall patterns in the region.
 ```
+
+# Precipitation Plot Twist
+```{python}
+#| echo: true
+#| eval: true 
+#| file: code/ppt-trend.py
+#| fig-cap: This chart helps us examine the trend in summer precipitation in Southeastern Utah from 1980 to 2024. The trend line indicates a slightly decreasing trend, suggesting a potential decline in summer rainfall over time.
+```
+
+# Next up:
+Let's summarize all our findings! 

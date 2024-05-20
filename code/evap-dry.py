@@ -10,9 +10,6 @@ nearterm_data = pd.read_csv('./data/clean-data/nearterm_data_cleaned.csv')
 # Combine datasets for some visualizations
 combined_data = pd.concat([historic_data, nearterm_data])
 
-# Extracting and merging the relevant columns for Evap_Summer analysis
-combined_evap_data = combined_data[['year', 'Evap_Summer']]
-
 # Aggregating the data by year using the mean
 combined_evap_aggregated = combined_evap_data.groupby('year').mean().reset_index()
 
@@ -24,31 +21,38 @@ def calculate_trendline(x, y):
     trend = model.predict(x_reshaped)
     return trend
 
-evap_trend = calculate_trendline(combined_evap_aggregated['year'], combined_evap_aggregated['Evap_Summer'])
+# Extracting and merging the relevant columns for ExtremeShortTermDryStress_Summer_whole analysis
+combined_dry_stress_data = combined_data[['year', 'ExtremeShortTermDryStress_Summer_whole']]
 
-# Create the Evaporation in Summer trend plot in one step
-fig1 = go.Figure(
+# Aggregating the data by year using the mean
+combined_dry_stress_data_aggregated = combined_dry_stress_data.groupby('year').mean().reset_index()
+
+# Calculate trendline for ExtremeShortTermDryStress_Summer_whole
+dry_stress_trend = calculate_trendline(combined_dry_stress_data_aggregated['year'], combined_dry_stress_data_aggregated['ExtremeShortTermDryStress_Summer_whole'])
+
+# Create the Extreme Short Term Dry Stress in Summer trend plot in one step
+fig2 = go.Figure(
     data=[
         go.Scatter(
-            x=combined_evap_aggregated['year'],
-            y=combined_evap_aggregated['Evap_Summer'],
+            x=combined_dry_stress_data_aggregated['year'],
+            y=combined_dry_stress_data_aggregated['ExtremeShortTermDryStress_Summer_whole'],
             mode='lines+markers',
-            line=dict(color='orange'),
-            hovertemplate='Year: %{x}<br>Evaporation: %{y}<extra></extra>',
-            name='Evaporation in Summer'
+            line=dict(color='red'),
+            hovertemplate='Year: %{x}<br>Dry Stress: %{y}<extra></extra>',
+            name='Extreme Short Term Dry Stress'
         ),
         go.Scatter(
-            x=combined_evap_aggregated['year'],
-            y=evap_trend,
+            x=combined_dry_stress_data_aggregated['year'],
+            y=dry_stress_trend,
             mode='lines',
             line=dict(color='blue', dash='dash'),
             name='Trendline'
         )
     ],
     layout=dict(
-        title='Evaporation in Summer Trend',
+        title='Extreme Short Term Dry Stress in Summer Trend',
         xaxis_title='Year',
-        yaxis_title='Evaporation in Summer',
+        yaxis_title='Extreme Short Term Dry Stress in Summer',
         title_font=dict(size=18, family='Arial, sans-serif'),
         xaxis=dict(tickfont=dict(size=14)),
         yaxis=dict(tickfont=dict(size=14)),
@@ -67,5 +71,5 @@ fig1 = go.Figure(
     )
 )
 
-# Display the first plot
-fig1.show()
+# Display the second plot
+fig2.show()

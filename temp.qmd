@@ -1,5 +1,5 @@
 ---
-title: Summer Temperature
+title: Temperature
 format: 
     html:
         code-fold: true
@@ -7,26 +7,21 @@ toc: True
 # bibliography: reference.bib
 ---
 
-# Introduction
-
-Text here
-
+In this section, we will take a closer look at summer temperature levels. Previously, we observed a rising trend in maximum temperatures over the past few years. This section continues that discussion by comparing summer heat levels from the past to the present!
 ```{r}
 library(reticulate)
 
 use_condaenv("base", required = TRUE)
 ```
 
-## Subtitle
+# The Summer Heat Story
 
-More text
-
-<p style="font-size: 42px; font-weight: bold;">🥵</p>
-
-### Visualization 1
 ```{python}
 #| echo: true
 #| eval: true 
 #| file: code/temp.py
-#| fig-cap: place description here
+#| fig-cap: This scatter plot and trend line depicts the changes in average summer temperatures over the years. The color gradient from yellow to red indicates temperature levels, with the darker red hues representing higher temperatures. The increasing trend line suggests a gradual rise in summer temperatures.
 ```
+
+# Next up:
+Southeastern Utah is home to a diverse ecosystem that relies on soil conditions. Are rising heat levels affecting this resource?
