@@ -16,5 +16,29 @@
   },
   "pages/trend/trend.qmd": {
     "trend.html": "dc1e8511"
+  },
+  "pages/soil/soil.ipynb": {
+    "soil.html": "41ceaa20"
+  },
+  "pages/evaporation/evap.ipynb": {
+    "evap.html": "4613ee48"
+  },
+  "pages/ppt/ppt.ipynb": {
+    "ppt.html": "e1dcec07"
+  },
+  "ppt.qmd": {
+    "ppt.html": "1ae605d0"
+  },
+  "evap.qmd": {
+    "evap.html": "c7f40e17"
+  },
+  "soil.qmd": {
+    "soil.html": "a16bb2ab"
+  },
+  "max-heat.qmd": {
+    "max-heat.html": "f55de1e4"
+  },
+  "temp.qmd": {
+    "temp.html": "4aa59824"
   }
 }

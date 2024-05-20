@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: Southeastern Utah's National Parks
+  title:  🏔️ Southeastern Utah's National Parks 
   navbar:
     background: primary
     tools:
@@ -14,15 +14,21 @@ website:
     style: "floating"
     search: false
     contents:
-      - section: "1️⃣"
+      - section: "Chapter 0️⃣"
         contents:
           - index.qmd
-      - section: "2️⃣"
+      - section: "Chapter 1️⃣"
         contents:
-          - pages/treecanopy/treecanopy.qmd
-      - section: "3️⃣"
+          - temp.qmd
+      - section: "Chapter 2️⃣"
         contents:
-          - pages/trend/trend.qmd
+          - soil.qmd
+      - section: "Chapter 3️⃣"
+        contents:
+          - evap.qmd
+      - section: "Chapter 4️⃣"
+        contents:
+          - ppt.qmd
     # contents:
     #   - index.qmd
     #   - pages/treecanopy/treecanopy.qmd

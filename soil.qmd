@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Summer Soil
 format: 
     html:
         code-fold: true
@@ -7,18 +7,28 @@ toc: True
 # bibliography: reference.bib
 ---
 
+# Introduction
+
+Text here
+
 ```{r}
 library(reticulate)
 
 use_condaenv("base", required = TRUE)
 ```
 
-<p style="font-size: 42px; font-weight: bold;">🥵</p>
+## Subtitle
+
+More text
+
+<p style="font-size: 42px; font-weight: bold;">🍂</p>
 
 ### Visualization 1
 ```{python}
 #| echo: true
 #| eval: true 
-#| file: code/heat-geo.py
+#| file: code/soil.py
 #| fig-cap: place description here
 ```
+
+
