@@ -20,7 +20,7 @@ fig = px.scatter(average_data, x='PPT_Summer', y='Evap_Summer',
 fig.update_layout(
     title_font=dict(size=18, family='Arial, sans-serif'),
     xaxis_title='Summer Precipitation (mm)',
-    xaxis=dict(autorange='reversed'),  # Reverse x-axis
+    # xaxis=dict(autorange='reversed'),  # Reverse x-axis
     yaxis_title='Summer Evaporation (mm)',
     width=800,
     height=600,
