@@ -15,6 +15,14 @@ library(reticulate)
 use_condaenv("base", required = TRUE)
 ```
 
+# Precipitation vs. Evaporation
+```{python}
+#| echo: true
+#| eval: true 
+#| file: code/evap-ppt.py
+#| fig-cap: The scatter plot shows a positive correlation between summer precipitation and summer evaporation, with a trendline indicating that higher precipitation is associated with higher evaporation.
+```
+
 # Summer Rain Stats
 ```{python}
 #| echo: true
