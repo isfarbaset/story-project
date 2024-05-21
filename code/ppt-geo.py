@@ -43,6 +43,9 @@ zoom_level_1 = calculate_zoom_level_1(combined_data_1['lat'], combined_data_1['l
 zoom_level_1 = zoom_level_1 * 0.95  # Increase the zoom factor
 
 # Set Mapbox access token
+# References:
+# https://towardsdatascience.com/simple-plotly-tutorials-868bd0890b8b
+# https://plotly.com/python/animations/
 px.set_mapbox_access_token("pk.eyJ1IjoiaXNmYXJiYXNldCIsImEiOiJjbHdiOWVtY2IwbGxsMmtraHZoYnB1YTMwIn0.10XSE1rNVsmXSnFmYYa0Cw")
 
 # Create the Plotly scatter_mapbox map with enhanced aesthetics and detailed map layers

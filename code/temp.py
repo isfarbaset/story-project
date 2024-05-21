@@ -26,10 +26,10 @@ def calculate_trendline(x, y):
 
 t_summer_trend = calculate_trendline(combined_t_summer_aggregated['year'], combined_t_summer_aggregated['T_Summer'])
 
-# Create a custom colorscale with cerulean for lower values and deep navy blue for higher values
+# Create a custom colorscale 
 custom_colorscale = [
     [0.0, 'rgb(255,192,12)'],  # yellow ochre
-    [1.0,  'rgb(150,0,0)']  # deep navy red
+    [1.0,  'rgb(150,0,0)']  # deep red
 ]
 
 # Create bubble chart with trendline and update layout
