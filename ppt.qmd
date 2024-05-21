@@ -1,5 +1,5 @@
 ---
-title: Rain
+title: Higher Rains, Higher Gains
 format: 
     html:
         code-fold: true
@@ -15,7 +15,6 @@ library(reticulate)
 use_condaenv("base", required = TRUE)
 ```
 
-# Precipitation vs. Evaporation
 ```{python}
 #| echo: true
 #| eval: true 

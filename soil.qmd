@@ -1,5 +1,5 @@
 ---
-title: Soil
+title: Hotter Summers, Drier Soils?
 format: 
     html:
         code-fold: true
@@ -7,7 +7,7 @@ toc: True
 # bibliography: reference.bib
 ---
 
-Summer temperatures are on the rise, so what does this mean for soil health? Does warmer weather dry up soil moisture levels? Let's see what the trend suggests.
+Summer temperatures are on the rise, so what does this mean for soil health? Does warmer weather deplete soil moisture levels? Let's see what the trend suggests ⬇️
 
 ```{r}
 library(reticulate)
@@ -15,7 +15,6 @@ library(reticulate)
 use_condaenv("base", required = TRUE)
 ```
 
-# Hotter Summers, Drier Soils?
 ```{python}
 #| echo: true
 #| eval: true 
@@ -28,7 +27,7 @@ use_condaenv("base", required = TRUE)
 #| echo: true
 #| eval: true 
 #| file: code/soil-moist.py
-#| fig-cap: The chart here displays the percentage of soil moisture during summer from 1980 to 2022. The red dashed trend line indicates an overall stable trend, with minor fluctuations over the years.
+#| fig-cap: The chart here displays soil moisture during summer from the 1980s to the 2020s. The red dashed trend line indicates an overall stable trend with minor fluctuations over the years, though it remains quite low.
 ```
 
 # Tracking Summer Soil Dryness
@@ -40,4 +39,4 @@ use_condaenv("base", required = TRUE)
 ```
 
 # Next up:
-Since rising temperatures and hotter days cause drier soils, does this mean evaporation is also affected speeds up in the Summers? This in turn could potentially affect the rainfall the area.
+Since rising temperatures and hotter days cause drier soils, does this mean evaporation speeds up in the summer? This in turn could potentially affect the area's rainfall!

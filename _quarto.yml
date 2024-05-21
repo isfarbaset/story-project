@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title:  🏔️ Climate Chronicles -  Utah's National Parks 
+  title:  🏔️ Climate Chronicles -  Southeastern Utah's National Parks 
   navbar:
     background: primary
     tools:
@@ -14,22 +14,22 @@ website:
     style: "floating"
     search: false
     contents:
-      - section: "Chapter 0️⃣"
+      - section: "Temperature Tales 🌡️"
         contents:
           - index.qmd
-      - section: "Chapter 1️⃣"
+      - section: "Blazing Trends 🔥"
         contents:
           - temp.qmd
-      - section: "Chapter 2️⃣"
+      - section: "Soil Sizzle 🍂"
         contents:
           - soil.qmd
-      - section: "Chapter 3️⃣"
+      - section: "Evaporation Station 🌤️"
         contents:
           - evap.qmd
-      - section: "Chapter 4️⃣"
+      - section: "Raindrops and Vapors 🌧️"
         contents:
           - ppt.qmd
-      - section: "Chapter 5️⃣"
+      - section: "It's A Wrap 🌿"
         contents:
           - conclusion.qmd
     # contents:

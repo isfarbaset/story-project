@@ -7,11 +7,7 @@ toc: True
 # bibliography: reference.bib
 ---
 
-Explore the evolving climate trends in Southeastern Utah through a comprehensive data-driven analysis highlighting significant changes in temperatures, soil moisture, evaporation and precipitation over the years
-
-# Overview
-
-For the preservation of Southeastern Utah Group National Parks, it is essential to understand the trends that lie in the evolving climate conditions and how they might impact the region's delicate ecosystems. This is an in-depth exploration and analysis of the interconnected effects of heat, soil conditions, and precipitation on the national parks. 
+For the preservation of Southeastern Utah Group National Parks, it is essential to understand the trends that lie in the evolving climate conditions and how they might impact the region's delicate ecosystems. This is an in-depth exploration and analysis of the interconnected effects of heat, soil conditions, evaporation and precipitation on the national parks. 
 
 ```{r}
 library(reticulate)
@@ -19,7 +15,6 @@ library(reticulate)
 use_condaenv("base", required = TRUE)
 ```
 
-# Temperature Tales
 ```{python}
 #| echo: true
 #| eval: true 
@@ -27,7 +22,7 @@ use_condaenv("base", required = TRUE)
 #| fig-cap: This geospatial visualization highlights the maximum temperatures reached within a year across the Southeastern National Parks in Utah. The timeline spans from 1980 to 2024. The animation over the years shows the geographical spread and varying intensity of the highest temperatures in the region.
 ```
 
-# Summer Heat: On the Rise?
+# Heat on the rise?
 
 ```{python}
 #| echo: true
@@ -37,4 +32,5 @@ use_condaenv("base", required = TRUE)
 ```
 
 # Next up: 
-This raises curiosity to further study the trends in the Summer temperatures of the past and if they are likely to increase in the future  ➡️
+
+This sparks curiosity to take a closer look at past summer temperature trends and explore how they have changed over the years ➡️

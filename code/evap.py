@@ -63,7 +63,8 @@ fig1 = go.Figure(
             y=-0.2,
             xanchor='center',
             x=0.5
-        )
+        ),
+        title_x=0.5
     )
 )
 

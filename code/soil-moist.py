@@ -61,6 +61,7 @@ fig1 = go.Figure(
         xaxis=dict(tickfont=dict(size=14)),
         width=800,
         height=600,
+        title_x=0.5,
         plot_bgcolor='#f7f7f7',
         hoverlabel=dict(font_size=16),
         showlegend=True,

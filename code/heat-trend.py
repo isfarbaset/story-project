@@ -26,11 +26,11 @@ sns.set_theme(style="whitegrid")
 
 # Plotting the Tmax_Summer over the years with enhancements and a trendline
 plt.figure(figsize=(16, 9))
-sns.lineplot(data=combined_tmax_data_aggregated, x='year', y='Tmax_Summer', marker='o', color='maroon', linewidth=2.5, label='Maximum Summer Temperature')
+sns.lineplot(data=combined_tmax_data_aggregated, x='year', y='Tmax_Summer', marker='o', color='maroon', linewidth=2.5, label='Maximum Temperature')
 sns.regplot(data=combined_tmax_data_aggregated, x='year', y='Tmax_Summer', scatter=False, color='red', ci=None, line_kws={"linewidth":2.5, "linestyle":"--"}, label='Trendline')
 
 # Adding titles and labels with enhanced aesthetics
-plt.title('Maximum Temperature Trend\n in Southeastern Utah', fontsize=32)
+plt.title('Maximum Temperature Trend', fontsize=32)
 plt.xlabel('Year', fontsize=25, weight='bold')
 plt.ylabel('Maximum Temperature (°C)', fontsize=25, weight='bold')
 

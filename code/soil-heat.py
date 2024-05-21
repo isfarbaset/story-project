@@ -29,5 +29,6 @@ fig.update_layout(
     xaxis_title='Maximum Summer Temperature (°C)',
     yaxis_title='Average Soil Moisture (%)',
     width=800,
-    height=600
+    height=600,
+    title_x=0.5
 )

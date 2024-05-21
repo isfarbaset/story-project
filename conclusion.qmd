@@ -7,6 +7,4 @@ toc: True
 # bibliography: reference.bib
 ---
 
-<h1 style="text-align: center;">It's a wrap</h1>
-
 ![](infographic.png)
